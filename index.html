@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>כרך ב – מד"ר מסדר שני ומעלה – משפטי קיום ויחידות</title>
+<style>
+:root{--edge:#6b7280;--txt:#e5e7eb;--k:1.45;--w:260px;--pad:calc(12px*var(--k));--gap:60px;--v-gap:calc(50px*var(--k));--radius:16px;--fs:calc(14px*var(--k));--shadow:0 6px 18px rgba(0,0,0,.25)}
+*{box-sizing:border-box}html,body{height:100%}body{margin:0;font-family:"Rubik","Segoe UI",Tahoma,Arial,sans-serif;background:linear-gradient(135deg,#0f172a,#111827 60%,#0b1226);color:var(--txt)}
+.wrap{width:100vw;height:100vh;display:flex;flex-direction:column;gap:8px}.toolbar{padding:10px 18px;display:flex;justify-content:space-between;align-items:center}.title{font-weight:700}
+.zoom-controls button{margin-inline-start:8px;padding:4px 10px;border-radius:8px;border:1px solid #334155;background:#0b1226;color:var(--txt);cursor:pointer}
+.stage{flex:1;margin:0 18px 18px;border-radius:18px;overflow:auto;background:rgba(11,18,38,.85);border:1px solid #1f2937;position:relative;padding:30px}
+.canvas{position:relative;isolation:isolate;padding:10px}.edges{position:absolute;inset:0;z-index:1;pointer-events:none}
+.layer{position:relative;display:flex;justify-content:center;gap:var(--gap);margin-bottom:var(--v-gap);z-index:2}
+.layer.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(var(--w),var(--w)));justify-content:space-evenly;gap:var(--gap)}
+.node{position:relative;z-index:3;width:var(--w);padding:var(--pad);border-radius:var(--radius);background:#0b1226;color:var(--txt);text-align:center;font-size:var(--fs);line-height:1.45;overflow-wrap:break-word;min-height:60px;box-shadow:var(--shadow)}
+.lvl1{background:linear-gradient(135deg,#6d28d9,#8b5cf6);font-size:calc(var(--fs)*1.6)}.lvl3{background:linear-gradient(135deg,#059669,#34d399);font-size:calc(var(--fs)*1.2)}
+.lvl4{background:linear-gradient(135deg,#0891b2,#22d3ee);color:#042430;font-size:calc(var(--fs)*1.05);min-height:56px}
+a.node{text-decoration:underline;display:block;cursor:pointer;color:#042430}a.node:hover{text-decoration:none;filter:brightness(1.1)}
+.subcol{display:flex;flex-direction:column;align-items:center;gap:16px}
+</style></head><body><div class="wrap">
+<div class="toolbar"><div class="title">כרך ב – מד"ר מסדר שני ומעלה – משפטי קיום ויחידות</div><div class="zoom-controls"><button id="zout">A−</button><button id="zin">A+</button></div></div>
+<div class="stage"><div class="canvas" id="canvas"><svg class="edges" id="edges" xmlns="http://www.w3.org/2000/svg"></svg>
+<div class="layer" id="L1"><div class="node lvl1" id="root">כרך ב – מד"ר מסדר שני ומעלה – משפטי קיום ויחידות</div></div>
+<div class="layer grid" id="L2">
+          <div class="subcol">
+            <div class="node lvl3">מבוא ומפת היחידה</div>
+            <a href="https://opal.openu.ac.il/mod/combopage/view.php?id=6974408" class="node lvl4">מפת היחידה</a>
+          </div>
+          <div class="subcol">
+            <div class="node lvl3">אופרטור דיפרנציאלי לינארי מסדר שני</div>
+            <a href="https://opal.openu.ac.il/mod/combopage/view.php?id=6974386&from=topNext" class="node lvl4">אופרטור דיפרנציאלי לינארי מסדר שני – יחידות הלימוד</a>
+            <a href="https://opal.openu.ac.il/mod/combopage/view.php?id=6974399&from=nav" class="node lvl4">שמירה על פעולת הכפל בסקלר – המחשה אינטראקטיבית</a>
+            <a href="https://opal.openu.ac.il/mod/combopage/view.php?id=6974388&from=nav" class="node lvl4">שמירה על פעולת החיבור – המחשה אינטראקטיבית</a>
+            <a href="https://opal.openu.ac.il/mod/combopage/view.php?id=6974398&from=nav" class="node lvl4">גרעין האופרטור הלינארי – מרחב הפתרונות של מד"ר לינארית הומוגנית מסדר שני – המחשה אינטראקטיבית</a>
+          </div>
+          <div class="subcol">
+            <div class="node lvl3">מד"ר לינארית מסדר שני – משפטי הקיום והיחידות</div>
+            <a href="https://opal.openu.ac.il/mod/combopage/view.php?id=6974404&from=nav" class="node lvl4">משפט הקיום והיחידות לבעיית התחלה לינארית מסדר שני – יחידות הלימוד</a>
+            <a href="https://opal.openu.ac.il/mod/combopage/view.php?id=6974393&from=nav" class="node lvl4">מד"ר לינארית הומוגנית מסדר שני – דוגמה אינטראקטיבית 1</a>
+            <a href="https://opal.openu.ac.il/mod/combopage/view.php?id=6974391&from=nav" class="node lvl4">מד"ר לינארית הומוגנית מסדר שני – דוגמה אינטראקטיבית 2</a>
+            <a href="https://opal.openu.ac.il/mod/combopage/view.php?id=6974403&from=nav" class="node lvl4">העשרה – אנימציה אינטראקטיבית – התנהגות הפתרונות של מדל"ה מקדמים קבועים לפי שורשי המשוואה האופיינית</a>
+          </div>
+          <div class="subcol">
+            <div class="node lvl3">מד"ר לינארית אי-הומוגנית מסדר שני – השוואת מקדמים</div>
+            <a href="https://opal.openu.ac.il/mod/combopage/view.php?id=6974394&from=nav" class="node lvl4">השוואת מקדמים – דוגמה 1</a>
+            <a href="https://opal.openu.ac.il/mod/combopage/view.php?id=6974396&from=nav" class="node lvl4">השוואת מקדמים – דוגמה 2</a>
+          </div>
+          <div class="subcol">
+            <div class="node lvl3">מד"ר לינארית אי-הומוגנית מסדר שני – וריאציית הפרמטרים</div>
+            <a href="https://opal.openu.ac.il/mod/combopage/view.php?id=6974395&from=nav" class="node lvl4">וריאציית הפרמטרים – דוגמה 1</a>
+            <a href="https://opal.openu.ac.il/mod/combopage/view.php?id=6974397&from=nav" class="node lvl4">וריאציית הפרמטרים – דוגמה 2</a>
+            <a href="https://opal.openu.ac.il/mod/combopage/view.php?id=6974400&from=nav" class="node lvl4">ממ"ן 12 – שאלה 5</a>
+          </div>
+          <div class="subcol">
+            <div class="node lvl3">מד"ר לינארית מסדר גבוה</div>
+            <a href="https://opal.openu.ac.il/mod/combopage/view.php?id=6974405&from=nav" class="node lvl4">משפט הקיום והיחידות לבעיית התחלה לינארית מסדר גבוה – יחידות הלימוד</a>
+            <a href="https://opal.openu.ac.il/mod/combopage/view.php?id=6974406&from=nav" class="node lvl4">הורונסקיאן – יחידות הלימוד</a>
+            <a href="https://opal.openu.ac.il/mod/combopage/view.php?id=6974407&from=nav" class="node lvl4">הורונסקיאן – דוגמאות</a>
+            <a href="https://opal.openu.ac.il/mod/combopage/view.php?id=6974401&from=nav" class="node lvl4">ממ"ן 12 – שאלה 6 – הכוונה אינטראקטיבית</a>
+          </div>
+</div></div></div></div>
+<script>
+const edges=document.getElementById('edges'),canvas=document.getElementById('canvas');
+function pairs(){const p=[];let cols=document.querySelectorAll('#L2 .subcol');cols.forEach((c,si)=>{const h=c.querySelector('.lvl3');h.id='h'+si;p.push(['root','h'+si]);c.querySelectorAll('.lvl4').forEach((a,ii)=>{a.id='n'+si+'_'+ii;p.push(['h'+si,'n'+si+'_'+ii]);});});return p;}
+function lp(f,t){const r1=f.getBoundingClientRect(),r2=t.getBoundingClientRect(),rc=canvas.getBoundingClientRect();const x1=r1.left+r1.width/2-rc.left,y1=r1.bottom-rc.top,x2=r2.left+r2.width/2-rc.left,y2=r2.top-rc.top,m=(y1+y2)/2;return 'M '+x1+','+y1+' C '+x1+','+m+' '+x2+','+m+' '+x2+','+y2;}
+function draw(){edges.setAttribute('width',Math.max(canvas.scrollWidth,canvas.clientWidth));edges.setAttribute('height',Math.max(canvas.scrollHeight,canvas.clientHeight));edges.innerHTML='';pairs().forEach(function(pr){var f=document.getElementById(pr[0]),t=document.getElementById(pr[1]);if(!f||!t)return;var p=document.createElementNS('http://www.w3.org/2000/svg','path');p.setAttribute('d',lp(f,t));p.setAttribute('fill','none');p.setAttribute('stroke','var(--edge)');p.setAttribute('stroke-width','2');p.setAttribute('vector-effect','non-scaling-stroke');p.setAttribute('opacity','.9');edges.appendChild(p);});}
+var raf=null;function sd(){if(raf)cancelAnimationFrame(raf);raf=requestAnimationFrame(function(){raf=null;draw();});}
+new ResizeObserver(sd).observe(canvas);window.addEventListener('resize',sd);window.addEventListener('load',sd);
+function setK(d){var s=document.documentElement.style;var k=Math.max(1,Math.min(1.8,(parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--k'))||1.45)+d));s.setProperty('--k',k);sd();}
+document.getElementById('zin').onclick=function(){setK(.1);};document.getElementById('zout').onclick=function(){setK(-.1);};
+</script>
+<!-- page-load counter; GitHub publishes no analytics for Pages. Source: PRIMING_TOOLBOX/TOOLS/build_beacon.py -->
+<script src="https://shir-openu.github.io/beacon.js" defer></script>
+</body></html>
